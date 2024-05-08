@@ -35,7 +35,8 @@ const Body = (props) => {
 const Bodycard = styled.div`
 display: flex;
 flex-direction: row;
-margin: 100px 200px;
+margin: 100px 150px;
+justify-content: space-between;
 
 
 
@@ -57,6 +58,7 @@ img {
 const Content = styled.div`
     width: 50%;
     color: #033B4A;
+    margin-top: 10px;
 
 
 h2 {

@@ -111,7 +111,7 @@ width: 100wv;
 height: auto;
 
 .products-intro-container {
-    margin: 100px 200px;
+    margin: 100px 150px;
 
 
     .contentsectioncontainer {
@@ -231,7 +231,7 @@ height: auto;
 }
 `
 const ProductsDiv = styled.div`
-margin: 100px 200px;
+margin: 100px 150px;
 color: #033B4A;
 
 .productsection {
