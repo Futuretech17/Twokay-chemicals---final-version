@@ -1,5 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 
 
@@ -25,8 +26,8 @@ const Footer = () => {
             <QuicklinksContainer>
                 <ul>
                     <li></li>
-                    <li>Contact Us</li>
-                    <li>Our products</li>
+                    <li><Link to="/contact">Contact Us</Link></li>
+                    <li><Link to="/products">Our products</Link></li>
                     <li></li>
                 </ul>
             </QuicklinksContainer>
@@ -42,7 +43,7 @@ const Footer = () => {
 const FooterContainer = styled.div`
 
 margin-top: 100px;
-background-color: #21211f;
+background-color: #0152a8;
 width: 100vw;
 color: #e5e4e2;
 font-size: 16px;

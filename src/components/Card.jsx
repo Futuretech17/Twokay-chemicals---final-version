@@ -8,24 +8,28 @@ const Card = ({ img, alt, title, content, sizesAvailable, typesAvailable }) => {
             <CardImage src={img} alt={alt} />
             <Separator />
             <CardText>
-                <h3>{title}</h3>
-                <SizesAvailable>
-                    <h5>Sizes Available:</h5>
-                    <ul>
-                        {sizesAvailable && sizesAvailable.map((size, index) => (
-                            <li key={index}>{size}</li>
-                        ))}
-                    </ul>
-                </SizesAvailable>
+                <h4>{title}</h4>
+                {sizesAvailable && sizesAvailable.length > 0 && (
+                    <SizesAvailable>
+                        <h5>Sizes Available:</h5>
+                        <ul>
+                            {sizesAvailable.map((size, index) => (
+                                <li key={index}>{size}</li>
+                            ))}
+                        </ul>
+                    </SizesAvailable>
+                )}
                 <p>{content}</p>
-                <TypesAvailable>
-                    <h4>Types Available:</h4>
-                    <ul>
-                        {typesAvailable && typesAvailable.map((type, index) => (
-                            <li key={index}>{type}</li>
-                        ))}
-                    </ul>
-                </TypesAvailable>
+                {typesAvailable && typesAvailable.length > 0 && (
+                    <TypesAvailable>
+                        <h4>Types Available:</h4>
+                        <ul>
+                            {typesAvailable.map((type, index) => (
+                                <li key={index}>{type}</li>
+                            ))}
+                        </ul>
+                    </TypesAvailable>
+                )}
             </CardText>
         </CardContainer>
     );
@@ -49,18 +53,12 @@ const CardContainer = styled.div`
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 
-
-    h3 {
-        font-family: 'Poppins', sans-serif;
-        font-size: 20px;
-        // font-weight: 200;
-        line-height: 35px;
+    h4 {
         color: black;
     }
 
     h5 {
         color: rgb(59, 94, 103);
-
     }
 
     p {
@@ -73,7 +71,7 @@ const CardContainer = styled.div`
         font-wrap: break-word;
         margin: 10px;
         text-align: center;
-    },
+    }
 
     li {
         color: black;
@@ -104,7 +102,8 @@ const SizesAvailable = styled.div`
 
 const TypesAvailable = styled.div`
     margin-top: 10px;
-`
+`;
+
 const Separator = styled.div`
     height: 1px;
     background-color: #ccc;
@@ -113,6 +112,7 @@ const Separator = styled.div`
 `;
 
 export default Card;
+
 
 
 

@@ -157,7 +157,7 @@ div {
     justify-content: center;
     align-items: center;
     width: 40%;
-    background-color:blue;
+    background-color:#0152a8;
     margin-right: 15px;
     opacity: 0.8;
     border-radius: 5px;
