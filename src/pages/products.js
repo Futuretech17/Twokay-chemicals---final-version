@@ -27,8 +27,7 @@ const Product = () => {
                 <NonPharmaContainer>
                     <DescriptionContainer>
                         <h3><span>Non </span> - Pharmaceuticals</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Unlock natural wellness with our premium non-pharmaceuticals. Backed by science, crafted with care. Elevate your health, naturally.</p>
                     </DescriptionContainer>
                     <div className='flex-container'>
                         
@@ -182,8 +181,8 @@ const NonPharmaContainer = styled.div`
 ;
 
 const DescriptionContainer = styled.div`
-    padding: 10px 0 10px 0;
-    text-align: right;
+    // padding: 10px 0 10px 0;
+    // text-align: right;
 `;
 
 
